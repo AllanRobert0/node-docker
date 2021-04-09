@@ -7,7 +7,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello Word!!!!');
+    res.sendFile(path.join(__dirname + '/views/3dCssPlane/index.html'));
 });
 
 app.listen(PORT, HOST);
